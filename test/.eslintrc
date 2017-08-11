@@ -1,0 +1,9 @@
+{
+  "extends": "buzzi",
+  "rules": {
+    "global-require": 0
+  },
+  "env": {
+    "mocha": true
+  }
+}

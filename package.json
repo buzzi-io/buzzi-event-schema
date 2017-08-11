@@ -1,0 +1,34 @@
+{
+  "name": "buzzi-event-schema",
+  "version": "1.0.0",
+  "description": "Buzzi Event Json-Schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buzzi-io/buzzi-event-schema.git"
+  },
+  "keywords": [
+    "buzzi",
+    "event",
+    "json-schema"
+  ],
+  "author": "Swarming Technology",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buzzi-io/buzzi-event-schema/issues"
+  },
+  "homepage": "https://github.com/buzzi-io/buzzi-event-schema#readme",
+  "dependencies": {
+    "require-dir": "^0.3.2"
+  },
+  "devDependencies": {
+    "ajv": "^5.2.2",
+    "chai": "^4.1.1",
+    "eslint": "^4.4.1",
+    "eslint-config-buzzi": "^1.1.0",
+    "mocha": "^3.5.0"
+  }
+}
