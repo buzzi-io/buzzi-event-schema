@@ -5,6 +5,9 @@
   "properties": {
     "session_id": { "type": "string" },
     "timestamp": { "type": "string", "format": "date-time" },
+    "search_type": { "type": "string" },
+    "search_query": { "type": "string" },
+    "page_url": { "type": "string", "format": "url" },
     "customer": {
       "type": "object",
       "required": ["email"],
@@ -15,9 +18,6 @@
         "customer_id": { "type": "string" },
         "customer_since": { "type": "string", "format": "date-time" }
       }
-    },
-    "search_type": { "type": "string" },
-    "search_query": { "type": "string" },
-    "page_url": { "type": "string", "format": "url" }
+    }
   }
 }
