@@ -5,6 +5,7 @@
   "properties": {
     "session_id": { "type": "string" },
     "timestamp": { "type": "string", "format": "date-time" },
+    "page_url": { "type": "string", "format": "url" },
     "customer": {
       "type": "object",
       "required": ["email"],
@@ -15,7 +16,6 @@
         "customer_id": { "type": "string" },
         "customer_since": { "type": "string", "format": "date-time" }
       }
-    },
-    "page_url": { "type": "string", "format": "url" }
+    }
   }
 }
