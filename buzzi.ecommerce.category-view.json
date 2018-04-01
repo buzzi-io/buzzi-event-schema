@@ -1,0 +1,29 @@
+{
+  "title": "buzzi.ecommerce.category-view",
+  "type": "object",
+  "required": ["customer", "category"],
+  "properties": {
+    "session_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "customer": {
+      "type": "object",
+      "required": ["email"],
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "first_name": { "type": "string" },
+        "last_name": { "type": "string" },
+        "customer_id": { "type": "string" },
+        "customer_since": { "type": "string", "format": "date-time" }
+      }
+    },
+    "category": {
+      "type": "object",
+      "required": ["category_name"],
+      "properties": {
+        "category_name": { "type": "string" },
+        "category_id": { "type": "string" },
+        "category_url": { "type": "string", "format": "url" }
+      }
+    }
+  }
+}
