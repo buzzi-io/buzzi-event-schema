@@ -6,7 +6,7 @@
     "session_id": { "type": "string" },
     "timestamp": { "type": "string", "format": "date-time" },
     "site_id": { "type": "string" },
-    "subscriber_email": { "type": "string", "format": "email" },
+    "required": ["customer"],
     "customer": {
       "type": "object",
       "required": ["email"],
