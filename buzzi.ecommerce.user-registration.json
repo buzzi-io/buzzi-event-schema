@@ -1,20 +1,53 @@
 {
-  "title": "buzzi.ecommerce.user-registration",
-  "type": "object",
-  "required": ["customer"],
-  "properties": {
-    "session_id": { "type": "string" },
-    "timestamp": { "type": "string", "format": "date-time" },
-    "customer": {
-      "type": "object",
-      "required": ["email"],
-      "properties": {
-        "email": { "type": "string", "format": "email" },
-        "first_name": { "type": "string" },
-        "last_name": { "type": "string" },
-        "customer_id": { "type": "string" },
-        "customer_since": { "type": "string", "format": "date-time" }
-      }
+    "title": "buzzi.ecommerce.user-registration",
+    "type": "object",
+    "required": [
+        "customer"
+    ],
+    "properties": {
+        "session_id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "customer": {
+            "type": "object",
+            "required": [
+                "email"
+            ],
+            "properties": {
+                "email": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "format": "email"
+                },
+                "first_name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "last_name": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "customer_id": {
+                    "type": "string"
+                },
+                "customer_since": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
     }
-  }
 }
