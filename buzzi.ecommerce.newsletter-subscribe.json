@@ -1,0 +1,22 @@
+{
+  "title": "buzzi.ecommerce.newsletter-subscribe",
+  "type": "object",
+  "required": ["subscriber_email"],
+  "properties": {
+    "session_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "site_id": { "type": "string" },
+    "required": ["customer"],
+    "customer": {
+      "type": "object",
+      "required": ["email"],
+      "properties": {
+        "email": { "type": "string", "format": "email" },
+        "first_name": { "type": "string" },
+        "last_name": { "type": "string" },
+        "customer_id": { "type": "string" },
+        "customer_since": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
