@@ -47,6 +47,13 @@
                 "cart_items"
             ],
             "properties": {
+                "cart_id": {
+                "type": [
+                    "string",
+                    "integer",
+                    "null"
+                    ]
+                },
                 "order_id": {
                     "type": "string"
                 },
